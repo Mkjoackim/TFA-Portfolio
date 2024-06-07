@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <head>
+          <!-- content type -->
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2, viewport-fit=cover">
+          <title>contact</title>
+          <meta name="description" content="#">
+          <!-- twitter -->
+          <meta name="twitter:card" content="summary_large_image">
+          <meta name="twitter:url" content="#">
+          <meta name="twitter:title" content="contact - Joackim maka">
+          <!-- open graph -->
+          <meta property="og:locale" content="fr_BE">
+          <meta property="og:type" content="website">
+          <meta property="og:title" content="contact - Joackim maka">
+          <meta property="og:description" content="contact web design">
+          <meta property="og:image" content="website">
+          <!-- rel -->
+          <link rel="stylesheet" href="_styles/app.css">
+          <!-- Icon -->
+          <link rel="icon" type="images/svg" href="assets/images/logo.png" sizes="10x10">
+          <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+          <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+      </head>
+    <body>
+        <div id="top" class data-load-container>
+            <!--============== HEADER ==============-->
+            <header class="header" id="header">
+                <nav class="nav container">
+                    <a href="index.html" class="nav__logo">
+                        <h3 class="lg">MK joachim</h3>
+                    </a>
+                    <div class="nav__menu" id="nav-menu">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="index.html" class="nav__link">PORTFOLIO</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="Apropos.html" class="nav__link">A PROPOS</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="contact.html" class="nav__link">CONTACT</a>
+                            </li>
+                        </ul> 
+                        <!-- Close buttom -->
+                        <div class="nav__close" id="nav-close">
+                            <i class="ri-close-fill"></i>
+                        </div>
+                    </div>
+                    <div class="nav__buttons">
+                        <!--toggle button-->
+                        <div class="nav__toggle" id="nav-toggle">
+                            <i class="ri-menu-4-line"></i>
+                        </div>
+                    </div>
+                </nav>  
+            </header>
+            <!--============== SECTION ==============-->
+            <main class="main" id="fullpage">
+            <!--============== HOME ==============-->
+                <section class="contact">
+                    <div class="apropos__grid grid">
+                        <div class="card-text card__text rect__ap-img">
+                            <div class="rect--ap ">
+                                <h2 class="apropos__title">
+                                    Pour me contacter
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="card__contact">
+                            
+                            <form action="#">
+                                <div class="input-box">
+                                    <div class="input-field field">
+                                        <input type="text" placeholder="Nom" id="name" class="item" autocomplete="off">
+                                        <div class="error-txt">Votre nom ou prénom</div>
+                                    </div>
+                                    <div class="input-field field">
+                                        <input type="text" placeholder="subject" id="subject" class="item" autocomplete="off">
+                                        <div class="error-txt">Objet</div>
+                                    </div>
+                                    <div class="input-field field">
+                                        <input type="text" placeholder="Email" id="Email" class="item" autocomplete="off">
+                                        <div class="error-txt email">Votre Email</div>
+                                    </div>
+                                    <div class="textarea-field field">
+                                        <textarea name="" id="" id="Message" cols="30" rows="10" placeholder="Votre Message" class="item"></textarea>
+                                    </div>
+                                   
+                                    <button type="submit">Envoyer</button>
+                                
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    
+                </section>
+
+            </main>
+            <footer id="footer">
+                <div class="col col1">
+                    <h3 class="fot__h">Maka joackim</h3>
+                    <p class="fot__p">UI/UX Designer</p>
+                    <div class="social">
+                        <a href="https://www.instagram.com" class="nav__link"><i class="ri-instagram-fill link"></i></a>
+                        <a href="https://www.facebook.com" class="nav__link"><i class="ri-facebook-circle-fill link"></i></a>
+                        <a href="https://fr.linkedin.com" class="nav__link"><i class="ri-linkedin-box-fill link"></i></a>
+                    </div>
+                    <p style="color: #818181; font-size: smaller">DWT 2024 © All Rights Reserved</p>
+                </div>
+            
+                <div class="backdrop"></div>
+            </footer>
+             <!--===========SCROLL UP===========-->
+         <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-line"></i>
+        </a>
+        </div>   
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+        <script src="_script/main.js"></script>
+    </body>
+</html>
