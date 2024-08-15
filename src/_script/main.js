@@ -5,35 +5,117 @@ const navMenu = document.getElementById('nav-menu'),
       navClose = document.getElementById('nav-close')
 
 /*===== MENU SHOW =====*/
-if(navToggle){
-    navToggle.addEventListener('click', () =>{
-        navMenu.classList.add('show-menu')
-    })
-}
+navToggle.addEventListener('click',show);
+navClose.addEventListener('click',close);
 
-/*===== MENU HIDDEN =====*/
-if(navClose){
-    navClose.addEventListener('click', () =>{
-        navMenu.classList.remove('show-menu')
-    })
+function show(){
+    navMenu.style.display ='flex',
+    navMenu.style.top = '0'
 }
-/*=============== REMOVE MENU MOBILE ===============*/
-const navLink = document.querySelectorAll('.nav__link')
+function close(){ 
+    navMenu.style.top ='-100%'
+    }
+/*===== ACTIVE =====*/
 
-const linkAction = () =>{
-    const navMenu = document.getElementById('nav-menu')
-    navMenu.classList.remove('show-menu')
-}
-navLink.forEach(n => n.addEventListener('click', linkAction))
+const navLinkEls = document.querySelectorAll('.nav__link');
+const windowPathname = window.location.pathname;
 
-/*=============== CHANGE BACKGROUND HEADER ===============*/
-const scrollHeader = () =>{
-    const header = document.getElementById('header')
-    this.scrollY >= 50 ? header.classList.add('bg-header') 
-                       : header.classList.remove('bg-header')
-}
-window.addEventListener('scroll', scrollHeader)
+navLinkEls.forEach(navLinkEl => {
+    if (navLinkEl.href.includes(windowPathname)) {
+        navLinkEl.classList.add('active');
+    }
+})
+/*===== LOADER =====*/
+gsap.from('.loader h1', 10, {
+    x: 800
+}, 'start')
 
+gsap.from('.loader h2', 10, {
+    x: -800
+}, 'start')
+
+gsap.from('.nav__menu ul li', 1.4,{
+    y:-250,
+    stagger: .4
+})
+gsap.from('.about__txt',   {
+    scrollTrigger: {
+        trigger: '.about__txt',
+        start:'20px 30%',
+        toggleActions: "restart none none none",
+    },
+    x: -1000,
+    duration: 3
+})
+gsap.from('.grid-aps p',   {
+    scrollTrigger: {
+        trigger: '.grid-aps p',
+        start:'20px 30%',
+        toggleActions: "restart none none none",
+    },
+    x: -1500,
+    duration: 1.5
+})
+
+
+/*===== ANIMATION gsap =====*/
+
+gsap.from(".illu .gallery-item", {
+    scrollTrigger: {
+        trigger: ".illu .gallery-container",
+        toggleActions: "restart none none resert",
+        start : "top 30%"
+    },
+    y : 100,
+    opacity: 0,
+    scale: 0,
+    ease: "elastic.out(0.1,0.1)",
+    duration: 1,
+    stagger : 0.1
+})
+gsap.from(".card5", {
+    scrollTrigger: {
+        trigger: ".card5",
+        toggleActions: "restart none none resert",
+        start : "top 90%"
+    },
+    y : 300,
+    opacity: 0,
+    scale: 0,
+    duration: 1,
+    stagger : 0.1
+})
+gsap.from(".txt_art .art__txt", {
+    scrollTrigger: {
+        trigger: ".txt_art .art__txt",
+        toggleActions: "restart none none resert",
+        start : "top 100%"
+    },
+    x : -300,
+    opacity: 0,
+    scale: 0,
+    duration: 1,
+    stagger : 0.1
+})
+/*===== ANIMATION Reveal =====*/
+
+const sr = ScrollReveal({
+    duration: 2000,
+    delay: 400,
+}) ;
+
+sr.reveal('.hero-card-text', {
+    origin: 'left',
+    distance: '50px',
+})
+sr.reveal('.text .port_txt .art__txt', {
+    origin: 'left',
+    distance: '50px',
+})
+sr.reveal('.p_txt', {
+    origin: 'right',
+    distance: '50px',
+})
 
 /*=============== SHOW SCROLL UP ===============*/ 
 const scrollUp = () =>{
@@ -43,139 +125,45 @@ const scrollUp = () =>{
 }
 window.addEventListener('scroll', scrollUp)
 
-/*=============== FORM ===============*/ 
+/*=============== SVG ===============*/ 
 
-const form = document.querySelector("form")
-const fullName = document.getElementById("name");
-const subject = document.getElementById("subject");
-const email = document.getElementById("Email");
-const message = document.getElementById("Message");
+let path = document.querySelector("path");
+let pathLength = path.getTotalLength();
 
+path.style.strokeDasharray = pathLength + " " + pathLength;
 
-function sendEmail() {
-const bodyMessage = 'Nom: ${fullName.value}<br> Email: ${email: $email.value}<br> Message: ${message.value}';
+// Set offset
+path.style.strokeDashoffset = pathLength;
 
-    Email.send({
-        Host: "smtp.elasticemail.com",
-        Username : "joackimmaka2001.16@gmail.com",
-        Password : "61C1F2B1AB9508277BC2C7074CB513FB030",
-        To : 'joackimmaka2001.16@gmail.com',
-        From : "joackimmaka2001.16@gmail.com",
-        Subject : subject.value,
-        Body : bodyMessage
-    }).then(
-            message => {
-                if (message === 'OK') {
-                    Swal.fire({
-                        title: "Envoyer",
-                        text: "Votre message a été envoyer",
-                        icon: "success"
-                    });
-                }
-            }
-        );
-    }
+window.addEventListener("scroll", () => {
+	// What % down is it?
+	var scrollPercentage =
+		(document.documentElement.scrollTop + document.body.scrollTop) /
+		(document.documentElement.scrollHeight + document.body.clientHeight);
 
-   
+	// Length to offset the dashes
+	var drawLength = pathLength * scrollPercentage;
 
-    function checkInputs() {
-        const items = document.querySelectorAll(".item");
+	// Draw to reverse
+	path.style.strokeDashoffset = pathLength - drawLength;
 
-        for (const item of items) {
-            if (item.value == "") {
-                item.classList.add("error");
-                item.parentElement.classList.add("error");
-            }
-            if (items[1].value != "") {
-                checkEmail();
-            }
-            items[1].addEventListener("keyup", () => {
-                checkEmail();
-             });   
-            item.addEventListener("keyup", () => {
-                if (item.value != "") {
-                    item.classList.remove("error");
-                    item.parentElement.classList.remove("error");
-                }
-                else {
-                    item.classList.add("error");
-                    item.parentElement.classList.add("error");
-                }
-            })
-        }
-    } 
-    
-function checkEmail() {
-    const emailRegex = /^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,3})(\.[a-z]{2,3})?$/;
-    const errorTxtEmail = document.querySelector(".error-txt.email");
+	// Parallax
+	const target = document.querySelectorAll(".scroll");
 
-    if (!email.value.match(emailRegex)) {
-        email.classList.add("error");
-        email.parentElement.classList.add("error");
+	var index = 0,
+		length = target.length;
+	for (index; index < length; index++) {
+		var pos = window.pageYOffset * target[index].dataset.rate;
 
-        if (email.value !="") {
-            errorTxtEmail.innerText = "Adresse email invalide";
-        }
-        else {
-            errorTxtEmail.innerText = "Veuillez entrer une adresse email";
-        }
-    }
-    else {
-        email.classList.remove("error");
-        email.parentElement.classList.remove("error");
-    }
-}   
+		if (target[index].dataset.direction === "vertical") {
+			target[index].style.transform = `translate3d(0px, ${pos}px, 0px)`;
+		} else {
+			var posX = window.pageYOffset * target[index].dataset.ratex;
+			var posY = window.pageYOffset * target[index].dataset.ratey;
 
-    form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        checkInputs();
-
-        if ( !fullName.classList.contains("error") && !subject.classList.contains("error") && !fullName.classList.contains("error") 
-        && !email.classList.contains("error") && !message.classList.contains("error")) 
-    {
-        sendEmail(); 
-    }
-        
-    });
-
-    
-            /*=============== Graphique ===============*/ 
-
-
-    const barCanvas = document.getElementById
-    ("barCanvas");
-
-    const barChart = new CharacterData(barCanvas, {
-        type: "bar",
-        data: {
-            labels: ["Design UX/UI", "Design graphique", "Front-end", "Back-End"],
-            datasets: [{
-                data: [92,86,80,50],
-                backgroundcolor: [
-                    "rgba(255, 99, 132, 0.2)",
-                    "rgba(54, 162, 235, 0.2)",
-                    "rgba(255, 206, 86, 0.2)",
-                    "rgba(75, 192, 192, 0.2)"
-                ]
-            }]  
-        },
-        options: {
-            scales: {
-                y: {
-                    suggestedMax: 100,
-                    ticks: {
-                        font: {
-                            size: 18
-                        }
-                    }
-                },
-                x: {
-                    ticks: {
-                        font: {
-                            size: 18
-                        }
-                    }
-                }
-            }
-        }
-    })
+			target[
+				index
+			].scroll.style.transform = `translate3d(${posX}px, ${posY}px, 0px)`;
+		}
+	}
+});

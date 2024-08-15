@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
+<html lang="fr">
         <head>
           <!-- content type -->
           <meta http-equiv="content-type" content="text/html; charset=UTF-8">
@@ -21,16 +20,22 @@
           <!-- rel -->
           <link rel="stylesheet" href="_styles/app.css">
           <!-- Icon -->
-          <link rel="icon" type="images/svg" href="assets/images/logo.png" sizes="10x10">
+          <link rel="icon" type="images/svg" href="_images/logo_port.PNG" sizes="10x10">
           <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
           <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
       </head>
 <body>
         <!--============== HEADER ==============-->
         <header class="header" id="header">
+            <div class="loader">
+                <h1>À PROPOS</h1>
+                <h2>MK</h2>
+            </div>
             <nav class="nav container">
+                <span></span>
                 <a href="index.html" class="nav__logo">
-                    <h3 class="lg">MK joachim</h3>
+                    <img src="_images/logo_port.PNG" alt="logo" >
+                    
                 </a>
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
@@ -62,130 +67,218 @@
         <!--============== HOME ==============-->
             <section class="home section" id="accueil">
                 <div class="apropos">
-                    <div class="rect--ap">
-                        <h2 class="apropos__title">
-                            A PROPOS DE
-                        </h2>
+                    <div class="img__art">
+                        <img src="_images/stage2@2x.png" alt="main">
                     </div>
                     
                 </div>
             </section>
             <section class="apropos__txt">
                 <div class="grid-aps">
-                    <div class="aps text"></div>
+                    <div class="aps text">
                         <p class="aps-txt">
-                            Je m'appelle Joackim Maka, je suis étudiant en web design, 
-                            passionné par la création de sites web esthétiques et fonctionnels. 
-                            Mon parcours académique m'a permis de réaliser plusieurs sites web en tant que projets académiques, 
-                            ce qui m'a aidé à développer et affiner mes compétences en design et en codage. Grâce à ces projets, 
-                            j'ai acquis une bonne maîtrise des outils de design tels que Figma et Adobe XD, ainsi qu'une solide compréhension des 
-                            langages de programmation front-end comme HTML, CSS et JavaScript.
+                            Je suis actuellement à la recherche d'une entreprise pour un stage pour la période novembre à janvier qui pourrait
+                             m'aider à enrichir mes connaissances dans un cadre sociable et joyeux. 
+                            Je suis motivé à apprendre et à grandir professionnellement.
                         </p>
-                        <p class="aps-txt">
-                            En plus de ma passion pour le web design, je suis également très intéressé par l'art. 
-                            Je crée des illustrations de portraits, des dessins minimalistes, 
-                            et j'aime combiner plusieurs couleurs dans mes œuvres pour créer des pièces uniques et vibrantes. 
-                            Ma passion pour l'art me permet d'apporter une touche créative et personnelle à mes projets de design web.
-                        </p>
-                        <p class="aps-txt">
-                            Je suis aussi un grand amateur de photographie, 
-                            particulièrement avec un style vintage. 
-                            Capturer des moments avec une esthétique rétro m'inspire et m'aide à voir le monde sous un angle différent. 
-                            Mon objectif futur est de réussir à combiner toutes ces passions – web design, art et photographie – pour créer des sites web innovants et visuellement captivants.
-                        </p>
-                        <p class="aps-txt">
-                            Je suis enthousiaste à l'idée de continuer à explorer et à intégrer ces différentes formes d'art dans mes futurs projets web, en apportant une approche unique et créative à chaque réalisation.
-                        </p>
-                    </div>
-                </div>
-            </section>
-            <section class="illu">
-                <h2 class="img__illu">
-                    Illustrations
-                </h2>
-                <div class="gallery-container">
-                    <div class="gallery-item">
-                        <img src="_images/abra-illu.jpg" alt="abraham illustration">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="_images/color-illu@2x.jpg" alt="color illustration">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="_images/manon@2x.jpg" alt="manon illustration">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="_images/h-illu@2x.jpg" alt="Hadrien illustration">
-                    </div>
-                </div>
-            </section>
-            <section class="photos">
-                <h2 class="img__photos">
-                    Photos
-                </h2>
-                <div class="gallery-container">
-                    <div class="gallery-item">
-                        <img src="_images/youuss-ab@2x.jpg" alt="photo">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="_images/kai@2x.jpg" alt="photo">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="_images/brian@2x.jpg" alt="photo">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="_images/guew@2x.jpg" alt="photo">
-                    </div>
-                </div>
-            </section>
-            <section class="grap">
-                <div class="grap__bar">
-                    <canvas id="barCanvas" aria-label="chart" role="img">
-                    </canvas>
-                </div>
-            </section>
-            <section class="comp">
-                <div class="card__text">
-                    <div class="comp__txt">
-                        <h3 class="comp__h2">Recherche de Stage</h3>
-                        <p class="p__comp">
-                            Bonjour, je m'appelle Joackim Maka, étudiant en web design passionné par la création de sites web esthétiques et fonctionnels. 
-                            Je suis actuellement à la recherche d'une entreprise qui pourrait m'aider à enrichir mes connaissances dans un cadre sociable et joyeux. 
-                            Toute expérience est bonne à prendre, 
-                            et je suis motivé à apprendre et à grandir professionnellement.
-                        </p>
-                        <h3 class="comp__h3">Ce que je recherche</h3>
-                        <p class="p__comp">
-                            Je souhaite trouver un stage au sein d'une entreprise qui valorise la créativité et l'innovation. 
-                            Un environnement où je peux contribuer avec mon côté artistique et mon approche créative 
-                            tout en travaillant sur des projets de création de sites web en front-end et de design visuel.
-                        </p>
-                        <h3 class="comp__h3">Ce que je peux apporter</h3>
-                        <div class="li__comp-grid">
-                            <li class="li__comp"><span>Créativité et Art : </span>Je peux apporter une touche artistique unique à vos projets grâce à mes compétences en illustration et en design minimaliste.</li>
-                            <li class="li__comp"><span>Compétences Techniques :</span> Maîtrise des outils de design comme Figma et Adobe XD, ainsi que des langages de programmation front-end comme HTML, CSS et JavaScript.</li>
-                            <li class="li__comp"><span>Approche Innovante :</span> Intégration de mes passions pour l'art et la photographie vintage dans des projets web pour créer des expériences visuelles captivantes.</li>
-                        </div>
                         
-                        <h3 class="comp__h3">Intéressé par une Collaboration ?</h3>
-                        <p class="p__comp">Si vous recherchez un stagiaire motivé et créatif pour rejoindre votre équipe, 
-                                            n'hésitez pas à me contacter via le formulaire sur la page contact</p>
-
                     </div>
+                </div>
+            </section>
+            <section class="stage">
+                <h2 class="stage__title">
+                        Ce que je peux apporter
+                </h2>
+                <div class="stage__s art__s">
+                    
+                    <p class="txt__s">
+                        Mes compétences Techniques telle que la maîtrise des outils de design comme Figma et Adobe XD, 
+                        ainsi que des langages de programmation front-end comme HTML, CSS/SASS et JS/jQUERY. 
+                    </p>
+                    <p class="txt__s ">
+                        De la créativité et l’art en intégrant mes passions dans des 
+                        projets web pour créer des expériences visuelles captivantes.  
+                    </p>
+                    
                     
                 </div>
-            </section>
-
-        </main>
-        <footer id="footer">
-            <div class="col col1">
-                <h3 class="fot__h">Maka joackim</h3>
-                <p class="fot__p">UI/UX Designer</p>
-                <div class="social">
-                    <a href="https://www.instagram.com" class="nav__link"><i class="ri-instagram-fill link"></i></a>
-                    <a href="https://www.facebook.com" class="nav__link"><i class="ri-facebook-circle-fill link"></i></a>
-                    <a href="https://fr.linkedin.com" class="nav__link"><i class="ri-linkedin-box-fill link"></i></a>
+                <div class="pq">
+                    <h2 class="stage__title">
+                        Pourquoi me choisir 
+                    </h2>
+                    <p class="txt__s">
+                        En tant que créatif passionné, je suis convaincu que nous pouvons établir une relation de confiance durable. 
+                        Je souhaite intégrer une équipe ambitieuse et dynamique qui saura mettre mes compétences au défi. Je me forme constamment et suis capable de m’adapter à votre rythme. Que ce soit en télétravail ou sur place dans vos locaux, je suis persuadé de pouvoir apporter un impact positif à votre entreprise.
+                    </p>
+                    <p class="txt__s">Je suis très enthousiaste à l’idée de travailler et d’apprendre dans un cadre professionnel. Cela me permettrait de progresser et de mieux me préparer aux futurs défis du monde du travail.
+                    </p>
                 </div>
-                <p style="color: #ffffff; font-size: smaller">DWT 2024 © All Rights Reserved</p>
+                <div class="tag-scrollers">
+                    <div class="tag-scroller">
+                        <ul class="tag-list">
+                            <li>Accessibilité</li>
+                            <li>UX</li>
+                            <li>Back-end</li>
+                            <li>UI</li>
+                            <li>Adobe XD</li>
+                            <li>UX</li>
+                            <li>JS/jQUERY</li>
+                            <li>HTML</li>
+                            <li>Data Architecture</li>
+                            <li>Online / Digital</li>
+                            <li>Web Analytics</li>
+                            <li>Display</li>
+                            <li>CSS/SCSS</li>
+                            <li>Front-end</li>
+                            <li>Figma</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="apropos__p">
+                <div class="apropos-txt">
+                    <div class="port__ap">
+                        <h2 class="port__title">
+                            À PROPOS
+                        </h2>
+                        
+                    </div>
+                    <p class="txt__s">
+                        Étudiant en web design à la Haute École Albert Jacquard, mon parcours académique m’a permis de réaliser plusieurs sites web dans le cadre de projets, 
+                        ce qui m’a aidé à développer et affiner mes compétences en design et en codage.
+                    </p>
+                    <p class="txt__s">
+                        Je suis motivé à l’idée de continuer à explorer et à intégrer différentes formes d’art dans mes futurs projets web, 
+                        tout en apportant une approche unique et créative à chaque réalisation.
+                    </p>
+                </div>
+            </section> 
+        </main>
+        <div class="line-container__apr">
+            <svg  viewBox="0 0 313 1087" fill="none">
+                <path d="M66.5 0V222C201 232.5 273 184.5 256 89M113.5 40V181.5C170.5 184 216.6 168.7 211 101.5M5 430.5L64.5 653.5H118.5L157.5 505.5L196.5 653.5H249.5L308 430.5H257.5L221 589.5L180.5 430.5H133L94 589.5L55.5 430.5H5ZM77.5 861.5V901.5H133.5V1083H180V901.5H236V861.5H77.5Z" stroke="black" stroke-width="7"/>
+                </svg>
+                      
+         </div> 
+         <div class="line-container__apropos">
+            <svg version="1.0" 
+                 viewBox="0 0 2480.000000 3508.000000"
+                preserveAspectRatio="xMidYMid meet">
+
+                <g transform="translate(0.000000,3508.000000) scale(0.100000,-0.100000)"
+                fill="#000000" stroke="none">
+                <path d="M12635 27993 c-1740 -59 -3295 -563 -4597 -1491 -596 -425 -1062
+                -868 -1892 -1797 -650 -727 -1033 -1083 -1481 -1378 -392 -257 -731 -407
+                -1216 -538 -177 -47 -214 -78 -190 -159 33 -109 384 -460 656 -655 424 -303
+                875 -343 1490 -131 381 131 719 304 1575 808 644 379 838 488 1209 683 1342
+                702 2594 1083 3971 1209 410 38 500 41 1065 41 597 0 725 -7 1154 -56 1537
+                -174 2721 -680 3303 -1409 193 -242 318 -551 318 -786 0 -208 -61 -292 -239
+                -330 -282 -59 -810 46 -2171 435 -1158 330 -1691 459 -2375 575 -1884 318
+                -3449 144 -4863 -539 -296 -143 -532 -279 -1057 -605 -553 -343 -710 -434
+                -1034 -594 -543 -269 -1036 -437 -1526 -520 -458 -77 -1182 -80 -1667 -5 -205
+                31 -248 23 -248 -47 0 -120 308 -495 568 -693 191 -145 450 -287 710 -389
+                l123 -49 -65 -6 c-128 -12 -399 -122 -502 -205 -57 -45 -104 -125 -104 -177 0
+                -57 47 -133 114 -183 194 -144 543 -242 1326 -372 586 -97 878 -168 1145 -276
+                337 -137 532 -330 512 -506 -9 -75 -43 -135 -121 -216 -87 -90 -177 -152 -476
+                -327 -440 -256 -663 -419 -870 -631 -184 -189 -290 -340 -406 -577 -366 -753
+                -278 -1789 216 -2536 350 -529 869 -867 1515 -986 121 -23 450 -31 586 -15
+                368 42 713 207 974 465 222 219 382 487 509 853 106 307 167 583 291 1312 108
+                638 146 813 227 1060 114 348 246 573 418 710 129 105 249 145 425 144 500 -2
+                1070 -414 2041 -1475 234 -255 451 -502 923 -1049 752 -870 962 -1101 1416
+                -1556 176 -177 374 -370 440 -429 352 -318 726 -601 1060 -802 1104 -665 2338
+                -843 3491 -503 1445 425 2401 1496 2534 2839 13 133 13 449 0 582 -76 767
+                -431 1508 -990 2070 -457 458 -1001 748 -1592 848 -421 72 -848 45 -1230 -75
+                -710 -225 -1234 -756 -1402 -1419 -52 -207 -60 -282 -60 -555 0 -218 3 -274
+                22 -384 67 -386 186 -694 384 -988 205 -306 544 -607 863 -766 332 -165 742
+                -208 1012 -107 251 95 456 333 535 622 31 114 31 307 0 418 -71 253 -240 474
+                -578 755 -243 202 -324 299 -324 387 0 133 215 225 451 193 445 -60 862 -448
+                1034 -963 66 -198 79 -279 79 -497 1 -179 -2 -204 -26 -301 -119 -471 -488
+                -819 -1013 -953 -235 -60 -444 -81 -730 -73 -970 28 -2015 431 -3172 1223
+                -674 461 -1290 1019 -1662 1503 -292 380 -501 806 -577 1178 -60 293 -22 561
+                107 763 23 36 88 110 144 166 l102 101 424 6 c634 10 1012 43 1434 128 621
+                125 1113 322 1950 780 957 523 1300 651 2240 838 537 106 843 184 1128 285
+                517 184 966 449 1132 668 188 249 120 441 -183 519 -173 44 -522 68 -992 69
+                -789 1 -1481 87 -2215 274 -311 80 -470 131 -1175 376 -472 164 -761 246
+                -1047 297 -124 22 -182 27 -353 28 l-205 2 -200 66 c-706 231 -1622 405 -2510
+                479 -248 20 -882 17 -1065 -5 -860 -106 -1441 -442 -1710 -992 -294 -599 -160
+                -1389 344 -2025 535 -676 1385 -1090 2381 -1161 506 -35 1054 78 1458 302 586
+                326 954 877 1032 1547 21 180 19 498 -6 828 -33 443 -19 600 65 718 41 58 110
+                109 169 125 41 12 49 10 168 -35 518 -196 1104 -488 1590 -791 333 -208 558
+                -413 646 -588 118 -234 28 -445 -297 -697 -190 -147 -433 -294 -732 -444 -429
+                -215 -799 -368 -1788 -739 -990 -371 -1334 -520 -1608 -695 l-84 -53 -196 6
+                c-828 27 -1824 151 -2552 319 -669 153 -1128 311 -1953 672 -530 232 -677 288
+                -907 346 -299 74 -415 83 -1245 85 -406 2 -776 8 -865 14 -759 56 -1459 269
+                -1939 592 -210 140 -369 287 -516 477 -61 78 -125 179 -125 197 0 8 41 5 133
+                -11 281 -49 432 -59 892 -59 452 0 540 6 840 56 503 84 1126 307 1684 604 253
+                134 444 247 951 565 544 341 886 527 1251 683 705 302 1369 462 2209 533 253
+                22 905 25 1175 6 955 -68 1870 -244 3155 -607 1210 -342 1681 -460 2055 -514
+                198 -29 334 -35 444 -22 264 33 366 137 378 386 9 177 -34 342 -147 570 -132
+                265 -325 494 -605 716 -790 629 -2068 1012 -3635 1090 -291 14 -984 6 -1270
+                -15 -1461 -110 -2647 -436 -3970 -1092 -502 -248 -739 -379 -1515 -836 -853
+                -502 -1185 -672 -1569 -804 -286 -98 -470 -129 -719 -121 -222 7 -372 49 -561
+                157 -231 132 -664 520 -742 665 -23 44 -21 46 91 75 550 143 889 292 1305 571
+                464 312 806 636 1561 1479 708 791 1115 1182 1631 1570 1000 752 2168 1249
+                3440 1464 1860 315 3845 66 5817 -730 642 -260 1395 -630 1996 -981 775 -454
+                1279 -810 2410 -1698 828 -651 947 -735 1064 -748 51 -6 43 5 -16 21 -49 14
+                -108 57 -325 235 -570 467 -1402 1120 -1738 1364 -1012 736 -2029 1316 -3130
+                1785 -1604 684 -3258 1014 -4815 961z m-95 -5413 c692 -48 1536 -187 2165
+                -356 168 -45 488 -143 497 -153 5 -4 -14 -23 -41 -43 -61 -46 -124 -140 -152
+                -227 -32 -98 -37 -340 -13 -636 22 -275 25 -686 6 -825 -66 -476 -244 -836
+                -569 -1151 -316 -306 -732 -498 -1245 -575 -146 -21 -474 -29 -638 -15 -602
+                52 -1168 242 -1617 542 -930 619 -1347 1678 -977 2478 119 258 358 501 654
+                663 271 149 680 261 1086 297 140 12 672 13 844 1z m3230 -560 c329 -42 607
+                -124 1585 -465 730 -254 1434 -407 2160 -470 212 -18 705 -34 1070 -35 281 0
+                487 -12 630 -36 366 -60 420 -209 169 -460 -215 -215 -621 -431 -1129 -599
+                -274 -91 -480 -142 -990 -245 -982 -198 -1298 -315 -2220 -817 -650 -355 -959
+                -499 -1351 -633 -595 -203 -1277 -301 -2089 -300 l-220 1 40 25 c65 41 348
+                177 520 249 201 85 401 162 975 377 1530 572 2168 878 2627 1262 250 209 353
+                433 297 649 -62 242 -319 497 -791 786 -409 250 -878 490 -1295 661 -65 27
+                -125 53 -135 59 -20 12 -17 12 147 -9z m-11095 -2579 c462 -113 876 -146 1705
+                -135 1025 14 1163 -14 2080 -418 783 -346 1164 -483 1755 -633 807 -205 1579
+                -312 2759 -381 l108 -6 -45 -47 c-299 -311 -369 -687 -222 -1195 80 -275 258
+                -631 461 -922 407 -584 1132 -1245 1959 -1786 967 -633 1798 -971 2679 -1090
+                217 -30 678 -32 857 -5 429 65 747 208 994 448 205 199 329 421 386 691 26
+                123 32 394 10 518 -95 556 -414 1013 -856 1226 -60 29 -150 65 -200 80 -81 25
+                -106 28 -245 28 -137 1 -163 -2 -225 -22 -38 -13 -88 -35 -111 -48 -57 -33
+                -119 -102 -134 -149 -19 -58 -7 -143 29 -212 46 -86 104 -148 269 -285 224
+                -186 297 -254 380 -354 98 -117 166 -229 205 -341 30 -83 32 -96 32 -228 0
+                -160 -14 -217 -88 -360 -103 -198 -270 -337 -472 -391 -95 -26 -332 -30 -452
+                -9 -555 98 -1115 556 -1394 1140 -142 297 -217 612 -226 955 -10 343 38 611
+                159 885 237 537 758 949 1393 1098 205 49 322 61 565 61 391 0 718 -68 1069
+                -221 828 -360 1513 -1174 1767 -2102 80 -291 109 -507 109 -811 0 -238 -11
+                -355 -51 -562 -125 -644 -473 -1243 -978 -1684 -231 -202 -454 -351 -746 -498
+                -1156 -580 -2463 -579 -3675 3 -457 220 -901 525 -1380 949 -71 64 -283 269
+                -471 456 -456 457 -663 683 -1404 1541 -783 906 -1006 1152 -1414 1561 -394
+                394 -579 553 -846 730 -319 211 -617 314 -870 301 -125 -7 -198 -25 -305 -76
+                -272 -130 -475 -433 -628 -941 -70 -232 -105 -402 -252 -1245 -117 -667 -226
+                -1052 -388 -1369 -265 -518 -691 -829 -1235 -901 -642 -85 -1369 194 -1809
+                694 -336 382 -545 881 -604 1441 -17 164 -7 503 20 655 95 534 341 958 756
+                1300 176 145 322 241 675 445 440 255 579 382 627 575 14 57 15 79 5 133 -41
+                239 -296 447 -731 596 -266 92 -454 134 -1022 231 -211 36 -451 79 -534 96
+                -512 103 -805 227 -805 341 0 88 262 220 563 284 65 14 127 28 139 33 14 5 50
+                -1 102 -16 44 -13 134 -36 201 -52z"/>
+                </g>
+                </svg>
+         </div>    
+         <footer id="footer">
+            <div class="col col1">
+                <a href="index.html" class="nav__logo">
+                    <img src="_images/logo_port.PNG" alt="logo" >
+                </a>
+                
+                <p class="fot__p">makajoackim.mj@gmail.com</p>
+                <div class="page">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="uikit.html" class="nav__link">UI KIT</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="credit.html" class="nav__link">CRÉDIT</a>
+                        </li>
+                    </ul> 
+                </div>
+                <p style="color: #818181; font-size: smaller"><a href="https://dwt.heaj.be" class="a__ctt">DWT</a> 2024 © All Rights Reserved</p>
             </div>
         
             <div class="backdrop"></div>
@@ -194,11 +287,20 @@
          <a href="#" class="scrollup" id="scroll-up">
             <i class="ri-arrow-up-line"></i>
         </a>
-    </div>   
-     <script src="https://smtpjs.com/v3/smtp.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.min.js"></script>
-        <script src="_script/main.js"></script>
+    
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Observer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/MotionPathPlugin.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="_script/scroll.js"></script>
+    <script src="_script/js.js"></script>
+    <script src="_script/main.js"></script>
 </body>
 </html>

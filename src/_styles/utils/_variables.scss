@@ -1,16 +1,16 @@
    /*===== COLORS =======*/
 
-   $first-color: #eff5f4;
+   $first-color: #131314;
    $first-color-alt: #D7DDDD;
    $title-color: #FFFFFF;
-   $text-color: #ffffff;
-   $text-color-light: #626F6E;
-   $body-color: #181A1C;
-   $box-color: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
-   $span-color: #333839;
-   $charg__loader: #CE532E;
-   $charg__loader_2: linear-gradient(90deg, rgba(228,209,240,1) 0%, rgba(255,255,255,1) 50%, rgba(80,124,195,1) 100%);;
-   $charg__loader_3: #5D6C95;
+   $text-color: #181818;
+   $text-color-light: #313131;
+   $body-color: #FFFFFF;
+   $box-color: #5FC2BA;
+   $span-color: #3B556D;
+   $charg__loader: #5FC2BA;
+   $charg__loader_2: #2f3541;
+   $charg__loader_3: rgb(243, 244, 245);
 
 
    /*===== Font/Typography =======*/
@@ -56,3 +56,7 @@
     $bg-trois-font-size: 55px;
     $bg-line-height: 6rem;
     $bg-line-height-text: 2.6rem;
+
+   $index: calc(1vw + 1vh);
+   $index-big: calc(2vw + 2vh);
+   $transition: cubic-bezier(.1, .7, 0, 1);

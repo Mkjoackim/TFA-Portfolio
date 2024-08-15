@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
     <head>
         <!-- content type -->
         <meta http-equiv="content-type" content="text/html; charset=UTF-8">
@@ -20,7 +20,7 @@
         <!-- rel -->
         <link rel="stylesheet" href="_styles/app.css">
         <!-- Icon -->
-        <link rel="icon" type="images/svg" href="assets/images/logo.png" sizes="10x10">
+        <link rel="icon" type="images/svg" href="_images/logo_port.PNG" sizes="10x10">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     </head>
@@ -28,9 +28,15 @@
     <div id="top" class data-load-container>
         <!--============== HEADER ==============-->
         <header class="header" id="header">
+            <div class="loader">
+                <h1>PORTFOLIO</h1>
+                <h2>MK</h2>
+            </div>
             <nav class="nav container">
+                <span></span>
                 <a href="index.html" class="nav__logo">
-                    <h3 class="lg">MK joachim</h3>
+                    <img src="_images/logo_port.PNG" alt="logo" >
+                    
                 </a>
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
@@ -62,15 +68,15 @@
         <!--============== HOME ==============-->
             <section class="home section" id="accueil">
                 <div class="home has-text grid">
-                    <div class="card-text card__text">
+                    <div class="card-text">
                         <h2 class="hero-card-text">
                             Salut! Je m’appelle 
-                            Joachim Maka.
-                            je suis étudiant à la haute école Albert Jacquard dans l’option Web designer.
+                            Joackim Maka.
+                            Je suis étudiant à la haute école Albert Jacquard dans l’option Web designer.
                         </h2>
                     </div>
                     <div class="card-image card">
-                        <img src="_images/jo-illu@2x.jpg" alt="mon portraits">
+                        <img src="_images/jo-illu@2x.jpg" alt="portraits">
                     </div>
                 </div>
             </section>
@@ -89,105 +95,370 @@
                 </div>
             </section>
             <!--============== PORTFOLIO ==============-->
-            <section class="portfolio">
-                <div class="port-container grid main">
-                    <div class="card-port">
-                        
-                        <h2 class="card__txt">
-                            IOLCE - 
-                            I Don’t Care What Airbnb is Doing.
+            
+            <section class="Portfolio">
+                <div class="marquee marquee-development">
+                    <div class="marquee__inner">
+                        <h2 class="inner">PORTFOLIO     Site Web    Photo  Illustration     PORTFOLIO   Site Web     Photo  Illustration  PORTFOLIO  Site Web     Photo  Illustration   
+                            
                         </h2>
-                        <p class="port__text">
-                            Un site dédié à Stéphane Hay - designer et conférencier, 
-                            dispense des formations axées sur la conception et le développement web dans divers pays.
-                        </p>
-                        <div class="button-container">
-                            <div class="button-container">
-                                <a href="joackimmaka.be" class="nav__link">
-                                    <div class="main-btn-content button-container">
-                                        <button class="button btn-15">Site web</button>
+                    </div>
+                </div>
+                <div class="port">
+                    <p class="port_txt">Voici mon portfolio, réalisé durant mes années d’études. Il est composé de mes travaux de classe et de projets personnels.</p>
+                </div>
+                <h2 class="img__illu">
+                    Site Web
+                </h2>
+                <p class="p_txt">
+                    Voici les sites web que j’ai réalisés au cours de mes années d’études en design web et transmédia. 
+                    Ces projets m’ont permis de découvrir des aspects du fonctionnement du web que j’ignorais auparavant et m’ont aidé à grandir et à m’améliorer pour la suite.
+                </p>
+                    <div class="cards">
+    
+                        <div class="card" data-index="0">
+                            <div class="card__inner">
+                                
+                                    <div class="card__image-container">
+                                        <img class="card__image" src="_images/hw@2x.jpg" alt="helloworld">
                                     </div>
-                                </a>
+                                    <div class="card__content">
+                                        <h3 class="card__title">Hello World</h3>
+                                        <p class="card__description">Le premier site que j’ai eu l’occasion de réaliser, il avait pour but de me présenter.
+                                        </p>
+                                        <a href="https://joachimmaka.be/projects/helloworld/" class="w__link">Voir le site</a>
+                                    </div>
+                                
+                            </div>
+                        </div>
+    
+                        <div class="card card__prt" data-index="0">
+                            <div class="card__inner">
+                                
+                                    <div class="card__image-container">
+                                        <img class="card__image" src="_images/iolce22@2x.jpg" alt="iolce">
+                                    </div>
+                                    <div class="card__content">
+                                        <h3 class="card__title">IOLCE</h3>
+                                        <p class="card__description">Le site est centré sur l’analyse de la conférence de Stephen Hay, que nous devions réaliser en groupe, puis coder individuellement.
+
+                                        </p>
+                                        <a href="https://joachimmaka.be/projects/iolce/" class="w__link">Voir le site</a>
+                                    </div>
+                                
+                            </div>
+                        </div>
+    
+                        <div class="card" data-index="0">
+                            <div class="card__inner">
+                                
+                                    <div class="card__image-container">
+                                        <img class="card__image" src="_images/rux@2x.jpg" alt="Rux">
+                                    </div>
+                                    <div class="card__content">
+                                        <h3 class="card__title">RUX</h3>
+                                        <p class="card__description">Un travail de groupe dont l’objectif était de trouver des solutions
+                                             et des idées pour rénover la cour de l’école, tout en respectant les contraintes, telles que l’accès pour l’arrivée des ambulances.
+
+                                        </p>
+                                        <a href="https://joachimmaka.be/projects/rux_cour_heaj/" class="w__link">Voir le site</a>
+                                    </div>
+                                
+                            </div>
+                        </div>
+    
+                        <div class="card" data-index="0">
+                            <div class="card__inner">
+                                
+                                    <div class="card__image-container">
+                                        <img class="card__image" src="_images/data@2x.jpg" alt="data play">
+                                    </div>
+                                    <div class="card__content">
+                                        <h3 class="card__title">DATAPLAY</h3>
+                                        <p class="card__description">Une collecte de données des services d’urgence des hôpitaux 
+                                            concernant les objets insolites retrouvés dans le corps humain.
+
+                                        </p>
+                                        <a href="https://justin.willemet.be/projets/dataplay/index.html" class="w__link">Voir le site</a>
+                                    </div>
+                                
+                            </div>
+                        </div>
+    
+                        <div class="card" data-index="0">
+                            <div class="card__inner">
+                                
+                                    <div class="card__image-container">
+                                        <img class="card__image" src="_images/tfa@2x.jpg" alt="tfa">
+                                    </div>
+                                    <div class="card__content">
+                                        <h3 class="card__title">TFA</h3>
+                                        <p class="card__description">Travail de fin d’année : mener une enquête pour identifier les besoins 
+                                            des personnes qui s’occupent de l’événementiel étudiant et proposer une solution adaptée.
+
+                                        </p>
+                                        <a href="joachimmaka.be" class="w__link">Voir le site</a>
+                                    </div>
+                                
                             </div>
                         </div>
                     </div>
-                    <div class="rect">
-                        <div class="image-container">
-                            <img src="_images/iolce22@2x.jpg" alt="IOLCE">
-                        </div>
-                    </div>
-                </div>
-                <div class="port-container grid main">
-                    <div class="rect">
-                        <div class="image-container">
-                            <img src="_images/rux@2x.jpg" alt="rux">
-                        </div>
-                    </div>
-                    <div class="card-port rux">
-                        <h2 class="card__txt">
-                            Rux - 
-                            Rethinking UX
+    
+                    <div class="end-anim"></div>
+                <section class="fin__img">
+                    <div class="photos">
+                        <h2 class="img__photos">
+                        Photos
                         </h2>
-                        <p class="port__text">
-                            la rénovation de la cours et de rendre cet espace plus attractif
+                        <p class="p_txt">
+                            Je suis un grand passionné de photographie. Capturer un instant présent et l’immortaliser pour toujours me 
+                            fascine. J’aime préserver des souvenirs de ces moments précieux et pouvoir les revoir à tout moment. 
+                            Que ce soit des paysages, des portraits, des scènes de vie ou même des détails insignifiants, j’adore photographier tout ce que je trouve beau. 
+                            Pour moi, la photographie est un moyen de figer le temps et de donner un sens durable à l’éphémère.
                         </p>
-                        <div class="button-container">
-                            <a href="joackimmaka.be" class="nav__link">
-                                <div class="main-btn-content button-container">
-                                    <button class="button btn-15">Site web</button>
-                                </div>
-                            </a>
+                    </div>
+                    
+                    <div class="wrapper">
+                        <div class="items">
+                            <div class="item" tabindex="0" style="background-image: url(_images/youuss-ab@2x.jpg);">
+                            </div>
+                            <div class="item " tabindex="0" style="background-image: url(_images/kai@2x.jpg);" >
+                            </div>
+                            <div class="item " tabindex="0"  style="background-image: url(_images/brian@2x.jpg);">
+                            </div>
+                            <div class="item " tabindex="0" style="background-image: url(_images/guew@2x.jpg);">
+                            </div>
+                            <div class="item " tabindex="0" style="background-image: url(_images/ciel@2x.jpg);">
+                            </div>
+                            <div class="item " tabindex="0" style="background-image: url(_images/berlin@2x.jpg);">
+                            </div>
+                            <div class="item " tabindex="0" style="background-image: url(_images/milan@2x.jpg);">
+                            </div>
+                            <div class="item " tabindex="0"  style="background-image: url(_images/lisboa@2x.jpg);">
+                            </div>
+                            <div class="item " tabindex="0" style="background-image: url(_images/imm@2x.png);">
+                            </div>
+                            <div class="item " tabindex="0" style="background-image: url(_images/leo@2x.jpg);">
+                            </div>
+                            <div class="item " tabindex="0" style="background-image: url(_images/esc@2x.png);">
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="port-container grid main">
-                    <div class="card-port">
-                        <h2 class="card__txt">
-                            Comiliste -
-                            Travail de fin d’année
+                </section>
+                <section class="illu">
+                    <h2 class="img__illu">
+                        Illustrations
+                    </h2>
+                    <p class="p_txt">
+                        Ma passion pour le dessin m’a été transmise par mon père, diplômé d’une école d’art. 
+                        Depuis tout petit, j’ai toujours aimé dessiner, en particulier des portraits, et cette passion ne m’a jamais quitté. 
+                        Pour moi, le dessin est un moyen de m’évader de la réalité, de rendre l’impossible possible grâce aux mélanges de couleurs, 
+                        et d’exprimer mes joies ou mes peines.
+
+                    </p>
+                    <div class="gallery-container">
+                        <div class="card-image card">
+                            <div class="gallery-item">
+                                <img src="_images/abra-illu.jpg" alt="abraham illustration">
+                            </div>
+                        </div>
+                        <div class="card-image card">
+                            <div class="gallery-item">
+                                <img src="_images/color-illu@2x.jpg" alt="color illustration">
+                            </div>
+                        </div>
+                        <div class="card-image card">
+                            <div class="gallery-item">
+                                <img src="_images/manon@2x.jpg" alt="manon illustration">
+                            </div>
+                        </div>
+                        <div class="card-image card">
+                            <div class="gallery-item">
+                                <img src="_images/h-illu@2x.jpg" alt="Hadrien illustration">
+                            </div>
+                        </div>
+                        <div class="card-image card">
+                            <div class="gallery-item">
+                                <img src="_images/kiss@2x.jpg" alt="kiss illustration">
+                            </div>
+                        </div>
+                        <div class="card-image card">
+                            <div class="gallery-item">
+                                <img src="_images/loup@2x.jpg" alt="loup illustration">
+                            </div>
+                        </div>
+                        <div class="card-image card">
+                            <div class="gallery-item">
+                                <img src="_images/ill_a@2x.jpg" alt="abraham illustration">
+                            </div>
+                        </div>
+                        <div class="card-image card">
+                            <div class="gallery-item">
+                                <img src="_images/style@2x.jpg" alt="style illustration">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <section class="art main">
+                <div class="art__s">
+                    <div class="img_art">
+                        <img src="_images/art2@2x.png" alt="main">
+                    </div>
+                    <div class="txt_art">
+                        <h2 class="img__illu">
+                            l'art
                         </h2>
-                        <p class="port__text">
-                            
+                        <p class="art__txt">
+                            L’art est subjectif et prend de nombreuses formes. On peut le trouver partout où l’on pose les yeux. 
+                            Il est communicatif et capable de susciter une multitude d’émotions : la joie, la tristesse, l’angoisse, la colère. Omniprésent dans notre vie, l’art joue un rôle essentiel, 
+                            et je souhaite être de ceux qui, grâce à leur art, peuvent faire ressentir ces émotions aux autres.
                         </p>
-                        <div class="button-container">
-                            <a href="joackimmaka.be" class="nav__link">
-                                <div class="main-btn-content button-container">
-                                    <button class="button btn-15">Site web</button>
-                                </div>
-                            </a>
-                        </div>
                     </div>
-                    <div class="rect">
-                        <div class="image-container">
-                            <img src="_images/tfa@2x.jpg" alt="Travail fin d'année">
-                        </div>
-                    </div>
+                    
                 </div>
             </section>
+            <div class="line-container__apr">
+                <svg  viewBox="0 0 313 1087" fill="none">
+                    <path d="M66.5 0V222C201 232.5 273 184.5 256 89M113.5 40V181.5C170.5 184 216.6 168.7 211 101.5M5 430.5L64.5 653.5H118.5L157.5 505.5L196.5 653.5H249.5L308 430.5H257.5L221 589.5L180.5 430.5H133L94 589.5L55.5 430.5H5ZM77.5 861.5V901.5H133.5V1083H180V901.5H236V861.5H77.5Z" stroke="black" stroke-width="7"/>
+                    </svg>
+                          
+             </div> 
+            <div class="line-container fleur">
+                <svg version="1.0" 
+                 viewBox="0 0 2480.000000 3508.000000"
+                preserveAspectRatio="xMidYMid meet">
+
+                <g transform="translate(0.000000,3508.000000) scale(0.100000,-0.100000)"
+                fill="#000000" stroke="none">
+                <path d="M14200 32298 c-251 -288 -550 -746 -731 -1123 -271 -564 -392 -1056
+                -392 -1585 0 -219 10 -332 48 -555 51 -294 107 -492 310 -1100 230 -689 304
+                -1018 305 -1359 0 -99 -1 -108 -17 -101 -261 109 -511 155 -836 155 -289 0
+                -538 -35 -827 -116 -404 -114 -818 -326 -1073 -550 -209 -183 -363 -417 -423
+                -640 -26 -96 -26 -302 0 -399 87 -332 382 -631 798 -809 483 -206 1094 -279
+                1726 -206 732 84 1537 333 2039 630 56 33 104 60 106 60 2 0 7 -132 10 -292 7
+                -320 24 -578 62 -933 65 -603 75 -700 87 -840 16 -195 16 -753 0 -915 -49
+                -487 -149 -857 -328 -1210 -163 -323 -347 -546 -595 -722 -228 -163 -575 -295
+                -878 -334 l-54 -7 6 44 c3 24 14 116 26 204 31 246 41 426 41 767 0 537 -46
+                962 -151 1388 -210 853 -572 1274 -1264 1469 -239 67 -459 103 -995 161 -206
+                23 -436 50 -510 61 -152 22 -343 58 -357 68 -6 3 -22 67 -37 141 -88 431 -262
+                723 -503 842 -82 41 -91 43 -172 43 -103 0 -158 -21 -219 -84 -126 -130 -134
+                -347 -20 -540 47 -78 178 -207 278 -274 109 -71 280 -154 411 -198 73 -24 103
+                -40 109 -54 13 -35 30 -316 45 -759 8 -236 19 -490 25 -565 61 -791 260 -1369
+                637 -1844 81 -102 261 -285 373 -379 219 -184 565 -383 858 -492 316 -119 680
+                -184 1052 -189 l165 -2 -2 -25 c-4 -39 -81 -266 -121 -360 -44 -99 -22 -93
+                -227 -62 -463 70 -935 49 -1651 -73 -584 -100 -935 -194 -1399 -373 -374 -144
+                -659 -278 -715 -334 -49 -49 -38 -117 24 -143 18 -8 102 -21 187 -30 85 -9
+                281 -34 437 -56 578 -80 813 -104 1179 -119 512 -21 896 21 1243 136 444 147
+                722 374 958 783 7 12 42 6 207 -32 395 -91 465 -109 465 -119 0 -6 -22 -35
+                -50 -64 -194 -213 -346 -563 -429 -987 -82 -420 -117 -826 -156 -1842 -40
+                -1027 -104 -1684 -221 -2275 -60 -301 -163 -668 -256 -911 l-29 -78 -121 -73
+                c-343 -208 -603 -459 -678 -655 -28 -71 -31 -164 -7 -210 30 -56 72 -78 152
+                -78 99 0 170 40 296 165 166 165 293 358 442 675 27 59 46 85 70 99 94 53 299
+                158 303 154 11 -12 -64 -458 -116 -690 -96 -423 -213 -768 -470 -1388 -232
+                -559 -306 -766 -385 -1075 -119 -463 -162 -859 -152 -1405 8 -426 25 -593 142
+                -1355 105 -687 129 -918 145 -1399 11 -336 2 -713 -31 -1235 -31 -484 -24
+                -707 71 -2306 37 -617 53 -831 64 -842 15 -15 17 244 10 1212 -11 1411 -10
+                1535 20 1929 38 484 46 668 46 1046 0 599 -27 894 -155 1711 -114 725 -130
+                899 -130 1399 1 422 8 530 61 845 68 411 173 735 458 1418 215 514 313 786
+                406 1125 76 278 149 652 185 947 9 72 18 140 20 152 4 15 34 37 101 73 355
+                191 616 379 834 599 235 237 335 391 645 999 232 455 352 672 497 893 233 357
+                457 635 843 1049 260 279 285 312 285 390 0 78 -40 110 -138 110 -209 0 -814
+                -278 -1302 -597 -791 -519 -1330 -1133 -1603 -1828 -154 -391 -235 -768 -303
+                -1404 -12 -113 -22 -169 -33 -182 -16 -18 -253 -150 -259 -144 -2 2 26 92 61
+                202 163 499 268 1047 337 1753 36 381 52 641 75 1270 8 223 20 500 25 615 49
+                989 158 1509 395 1875 54 84 156 202 211 244 l42 32 287 -57 c803 -162 1403
+                -197 1968 -114 552 80 977 248 1312 518 177 143 391 395 463 545 44 92 42 146
+                -8 197 -102 105 -317 82 -1615 -175 -220 -43 -560 -109 -755 -145 -604 -112
+                -881 -180 -1138 -280 -154 -61 -348 -161 -476 -246 l-107 -71 -362 82 c-199
+                46 -366 86 -371 91 -4 4 10 54 32 111 44 113 93 264 112 346 7 28 15 54 19 56
+                4 3 45 10 91 16 227 30 480 105 675 200 469 227 787 595 1018 1175 145 364
+                224 759 247 1245 18 365 1 671 -75 1355 -73 667 -103 1133 -90 1405 l7 135
+                104 99 c150 141 234 267 264 395 39 167 -60 316 -188 282 -88 -24 -169 -129
+                -220 -283 -30 -91 -72 -309 -72 -372 0 -43 -11 -55 -113 -121 -450 -291 -1280
+                -564 -1992 -655 -802 -103 -1548 19 -2020 331 -96 64 -250 210 -311 296 -97
+                135 -154 304 -154 455 0 325 262 684 685 941 703 426 1658 555 2275 308 l95
+                -38 -3 -39 c-15 -197 -130 -522 -259 -738 -43 -72 -162 -233 -192 -260 -21
+                -19 -22 -19 -108 4 -110 28 -351 112 -643 223 -349 133 -487 167 -674 167
+                -177 0 -308 -41 -388 -122 -66 -66 -83 -108 -83 -208 0 -77 3 -92 33 -153 98
+                -199 355 -364 672 -433 102 -22 336 -30 441 -15 264 38 490 142 699 322 l82
+                71 102 -16 c296 -45 515 -26 701 63 188 90 285 239 285 439 0 105 -19 190 -64
+                287 -76 164 -211 314 -385 429 l-101 67 0 147 c0 223 -32 452 -106 744 -47
+                191 -88 321 -224 728 -234 696 -312 1049 -327 1465 -18 529 107 1065 382 1640
+                39 83 98 198 130 255 56 100 521 880 566 948 35 53 15 37 -61 -50z m-278
+                -6085 c145 -104 255 -240 312 -382 38 -98 47 -231 22 -313 -67 -211 -339 -321
+                -709 -288 -72 6 -137 14 -144 18 -9 6 2 28 42 81 169 223 309 551 361 839 10
+                56 23 102 28 102 5 0 45 -26 88 -57z m-1932 -628 c141 -21 243 -54 575 -185
+                165 -65 365 -139 445 -165 80 -26 146 -48 148 -50 2 -2 -30 -29 -71 -59 -155
+                -117 -310 -188 -497 -229 -136 -29 -356 -28 -499 2 -270 57 -498 194 -578 348
+                -38 73 -46 114 -32 167 15 57 48 97 108 129 97 53 235 68 401 42z m3624 -247
+                c55 -78 -27 -271 -174 -413 l-52 -50 7 60 c19 164 87 350 146 399 37 32 53 33
+                73 4z m-5888 -954 c149 -70 280 -257 362 -515 35 -108 76 -298 67 -307 -10
+                -10 -167 47 -267 97 -184 91 -336 216 -405 332 -43 72 -67 168 -59 232 11 81
+                58 155 111 177 44 19 134 11 191 -16z m734 -1044 c155 -30 350 -55 675 -90
+                515 -54 728 -86 946 -140 588 -148 914 -430 1124 -975 116 -299 203 -710 247
+                -1165 21 -216 17 -980 -5 -1195 -18 -162 -51 -389 -63 -429 -6 -18 -17 -18
+                -248 -13 -494 11 -889 108 -1301 321 -694 357 -1138 937 -1324 1726 -77 327
+                -107 632 -131 1325 -11 298 -25 546 -36 618 -3 20 -2 37 3 37 4 0 55 -9 113
+                -20z m7570 -4066 c0 -9 -24 -53 -53 -97 -304 -465 -776 -748 -1452 -872 -252
+                -46 -411 -59 -715 -59 -301 -1 -459 10 -760 50 -261 35 -717 117 -733 133 -9
+                9 162 103 271 151 285 123 545 189 1281 325 168 31 557 107 865 170 868 176
+                1077 212 1219 214 64 1 77 -2 77 -15z m-5105 -703 c83 -12 154 -26 159 -31 11
+                -11 -38 -91 -120 -196 -243 -312 -629 -501 -1184 -581 -105 -15 -192 -18 -535
+                -17 -463 0 -538 6 -1255 93 -223 27 -436 53 -474 56 -37 4 -64 11 -60 15 13
+                13 267 119 464 195 500 191 869 289 1468 390 518 86 719 105 1097 101 236 -3
+                318 -7 440 -25z m3525 -2259 c0 -5 -71 -83 -157 -173 -384 -403 -579 -632
+                -803 -945 -210 -294 -342 -519 -608 -1039 -229 -448 -281 -543 -378 -690 -208
+                -316 -483 -565 -906 -819 -70 -42 -132 -76 -139 -76 -12 0 -11 8 22 295 85
+                727 256 1248 560 1705 132 198 245 336 434 529 388 396 829 713 1375 987 209
+                104 320 152 465 200 102 34 135 40 135 26z m-3788 -4379 c-4 -10 -22 -47 -41
+                -83 -128 -247 -314 -470 -438 -527 -69 -32 -93 -25 -93 25 1 127 193 346 474
+                540 95 66 110 73 98 45z"/>
+                </g>
+                </svg>                 
+             </div>   
         </main>
         <footer id="footer">
             <div class="col col1">
-                <h3 class="fot__h">Maka joackim</h3>
-                <p class="fot__p">UI/UX Designer</p>
-                <div class="social">
-                    <a href="https://www.instagram.com" class="nav__link"><i class="ri-instagram-fill link"></i></a>
-                    <a href="https://www.facebook.com" class="nav__link"><i class="ri-facebook-circle-fill link"></i></a>
-                    <a href="https://fr.linkedin.com" class="nav__link"><i class="ri-linkedin-box-fill link"></i></a>
+                <a href="index.html" class="nav__logo">
+                    <img src="_images/logo_port.PNG" alt="logo" >
+                </a>
+                
+                <p class="fot__p">makajoackim.mj@gmail.com</p>
+                <div class="page">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="uikit.html" class="nav__link">UI KIT</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="credit.html" class="nav__link">CRÉDIT</a>
+                        </li>
+                    </ul> 
                 </div>
-                <p style="color: #818182; font-size: smaller">DWT 2024 © All Rights Reserved</p>
+                <p style="color: #818181; font-size: smaller"><a href="https://dwt.heaj.be" class="a__ctt">DWT</a> 2024 © All Rights Reserved</p>
             </div>
         
-            <div class="backdrop"></div>  
+            <div class="backdrop"></div>
         </footer>
-         <!--===========SCROLL UP===========-->
-         <a href="#" class="scrollup" id="scroll-up">
-            <i class="ri-arrow-up-line"></i>
-        </a>
-    </div>   
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.min.js"></script>
-    <script src="_script/main.js"></script>
+     <!--===========SCROLL UP===========-->
+     <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+</div>   
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Observer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/MotionPathPlugin.min.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="_script/scroll.js"></script>
+<script src="_script/js.js"></script>
+<script src="_script/main.js"></script>
 </body>
 </html>
